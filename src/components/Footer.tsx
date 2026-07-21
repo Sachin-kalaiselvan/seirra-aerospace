@@ -70,7 +70,12 @@ const Footer = () => {
             <h4 className="font-heading font-semibold mb-4">Connect</h4>
             <div className="space-y-2 text-sm text-primary-foreground/70">
               <p>+91 78929 06828</p>
-              <p>info[@] sierraaerospace.in</p>
+              <a 
+                href="mailto:info@sierraaerospace.in"
+                className="hover:text-accent transition-colors"
+              >
+                info@sierraaerospace.in
+              </a>
               <div className="pt-2">
                 <p>56,10th Main, Sector-1</p>
                 <p>NOBO Nagar, BG Road</p>
