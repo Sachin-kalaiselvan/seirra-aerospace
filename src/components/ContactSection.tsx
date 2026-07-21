@@ -144,7 +144,7 @@ const ContactSection = () => {
             >
               {[
                 { icon: Phone, label: "Phone", value: "+91 78929 06828" },
-                { icon: Mail, label: "Email", value: "info[@] sierraaerospace.in" },
+                { icon: Mail, label: "Email", value: "info@sierraaerospace.in", href: "mailto:info@sierraaerospace.in" },
                 { icon: MapPin, label: "Address", value: "56,10th Main, Sector-1\nNOBO Nagar, BG Road\nBengaluru- 560076" }
               ].map((item, i) => (
                 <motion.div
@@ -159,7 +159,16 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground mb-1">{item.label}</div>
-                    <div className="font-medium text-foreground whitespace-pre-line">{item.value}</div>
+                    {item.href ? (
+                      <a 
+                        href={item.href}
+                        className="font-medium text-foreground hover:text-accent transition-colors"
+                      >
+                        {item.value}
+                      </a>
+                    ) : (
+                      <div className="font-medium text-foreground whitespace-pre-line">{item.value}</div>
+                    )}
                   </div>
                 </motion.div>
               ))}
