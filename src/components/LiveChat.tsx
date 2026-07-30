@@ -5,7 +5,7 @@ const LiveChat = () => {
   const handleWhatsAppClick = () => {
     const message = "Hi, I'd like to inquire about your products and services.";
     const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/919663353121?text=${encodedMessage}`;
+    const whatsappURL = `https://wa.me/917892906828?text=${encodedMessage}`;
     window.open(whatsappURL, "_blank");
   };
 
