@@ -14,7 +14,7 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
   const handleGetQuote = () => {
     const message = `Hi, I'm interested in ${product.name}. Could you please provide more information and pricing details? Thank you!`;
     const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/919663353121?text=${encodedMessage}`;
+    const whatsappURL = `https://wa.me/917892906828?text=${encodedMessage}`;
     window.open(whatsappURL, "_blank");
     onClose();
   };
