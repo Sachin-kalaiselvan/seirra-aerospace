@@ -52,7 +52,7 @@ const Footer = () => {
                 { icon: Instagram, href: "https://www.instagram.com/sierra_aerospace/" },
                 { icon: WhatsAppIcon, href: "https://wa.me/917892906828" },
               ].map((social, i) => (
-                <a
+                
                   key={i}
                   href={social.href}
                   target="_blank"
@@ -107,7 +107,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.technicals.map((link) => (
                 <li key={link.label}>
-                  <a
+                  
                     href={link.href}
                     className="text-primary-foreground/70 hover:text-accent transition-colors text-sm"
                   >
@@ -124,7 +124,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.products.map((link) => (
                 <li key={link.label}>
-                  <a
+                  
                     href={link.href}
                     className="text-primary-foreground/70 hover:text-accent transition-colors text-sm"
                   >
